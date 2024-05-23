@@ -5,10 +5,10 @@ from src.core.domain.services.userService import UserService
 from src.adapter.driven.userRepository import UserRepository
 from src.adapter.driver.controller import Controller
 
-userRepository = UserRepository()
-userUseService = UserService(userRepository)
-userUseCase = UserUseCase(userUseService)
-controller = Controller(userUseCase) 
+# userRepository = 
+# userUseService = 
+userUseService = UserService(UserRepository())
+controller = Controller(userUseService)
 
 app = Flask(__name__)
 
