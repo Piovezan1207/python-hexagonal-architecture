@@ -1,5 +1,5 @@
 import abc
-from ..entities.User import User
+from ...domain.entities.User import User
 
 class UserPort(metaclass=abc.ABCMeta):
     def __init__(self) -> None:

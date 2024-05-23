@@ -1,5 +1,5 @@
-from ..entities.User import User
-from ..ports.userRepositoryPort import UserRepositoryPort
+from ...domain.entities.User import User
+from ...domain.repositories.userRepositoryPort import UserRepositoryPort
 
 class UserService():
     def __init__(self, userRepository: UserRepositoryPort) -> None:

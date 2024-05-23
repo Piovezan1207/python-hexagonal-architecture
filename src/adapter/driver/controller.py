@@ -1,6 +1,6 @@
 from ...core.domain.entities.User import User
-from ...core.application.userCases.userUseCase import UserUseCase
-from ...core.domain.ports.userPort import UserPort
+# from ...core.application.userCases.userUseCase import UserUseCase
+from ...core.application.ports.userPort import UserPort
 
 class Controller():
     def __init__(self, userPort: UserPort) -> None:
@@ -10,3 +10,4 @@ class Controller():
         user = User(request.args["name"])
         response = self.userPort.createUser(user)
         return response
+
